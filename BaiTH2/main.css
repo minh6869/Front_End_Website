@@ -1,0 +1,75 @@
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+*{
+    padding: 1px;
+    margin: 3px;
+    box-sizing: border-box;
+
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+
+
+/* course section */
+
+.course-info{
+    width: auto;
+    height: auto;
+    background: white;
+    padding: 10px;
+    .course-scholarship{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        i{
+            margin-right: 10px;
+        }
+    }
+    .course-date{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        i{
+            margin-right: 15px;
+        }
+    }
+    .course-time-duration{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        i{
+            margin-right: 9px;
+        }
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (min-width: 700px){
+    .course-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 992px){
+    .course-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
